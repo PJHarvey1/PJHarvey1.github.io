@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gert's Bar ☕</title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3047/3047926.png">
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      padding: 1em;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .filtermenu {
+      margin: 1em 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      justify-content: center;
+    }
+    .filtermenu button {
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: white;
+      cursor: pointer;
+    }
+    .kaart {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1em;
+      display: none;
+    }
+    .kaart h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+    .kaart pre {
+      white-space: pre-wrap;
+      font-size: 0.9em;
+    }
+    .recepten-lijst {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1em;
+    }
+    .kaart.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gert's Bar ☕</h1>
+
+  <div class="filtermenu">
+    <button onclick="filterRecepten('all')">Toon alles</button>
+    <button onclick="filterRecepten('espresso')">Espresso</button>
+    <button onclick="filterRecepten('cappuccino')">Cappuccino</button>
+    <button onclick="filterRecepten('latte')">Latte</button>
+    <button onclick="filterRecepten('barista')">Caffè Barista</button>
+    <button onclick="filterRecepten('cold')">Cold Brew</button>
+    <button onclick="filterRecepten('sweet')">Sweet</button>
+  </div>
+
+  <div class="recepten-lijst">
+
+    <div class="kaart espresso sweet">
+      <h2>Affogato Shot</h2>
+      <pre>
+Basis: Espresso
+Koffiesterkte: 9/10
+Water: 30 ml
+Extra: bolletje vanille-ijs in glas
+      </pre>
+    </div>
+
+    <div class="kaart espresso sweet">
+      <h2>Orange Shot</h2>
+      <pre>
+Basis: Espresso
+Koffiesterkte: 8/10
+Water: 30 ml
+Extra: sinaasappelrasp + klein beetje siroop
+      </pre>
+    </div>
+
+    <div class="kaart latte sweet">
+      <h2>Dirty Chai Boost</h2>
+      <pre>
+Basis: Latte Macchiato
+Koffiesterkte: 7/10
+Melk: 25 sec
+Schuim: 10 sec
+Extra: opwarmen met Chai
+      </pre>
+    </div>
+
+    <div class="kaart cappuccino sweet">
+      <h2>Minty Mocha (After Eight)</h2>
+      <pre>
+Basis: Cappuccino
+Koffiesterkte: 7/10
+Melk: 50 ml (~18 sec)
+Schuim: 10 sec
+Extra: choco + drupje munt
+      </pre>
+    </div>
+
+    <div class="kaart barista">
+      <h2>Goudbalans Barista</h2>
+      <pre>
+Basis: Caffè Barista
+Sterkte: 7/10
+Water: 70 ml
+Bypass: 50 ml
+Maling: medium
+Temp: hoog
+      </pre>
+    </div>
+
+    <div class="kaart barista">
+      <h2>Soft Brew Barista</h2>
+      <pre>
+Basis: Caffè Barista
+Sterkte: 5/10
+Water: 60 ml
+Bypass: 70 ml
+Maling: medium/grof
+Temp: medium
+      </pre>
+    </div>
+
+    <div class="kaart cappuccino sweet">
+      <h2>Saltado (Salty Caramel Cortado)</h2>
+      <pre>
+Basis: Flat White
+Koffiesterkte: 8/10
+Melk: 12 sec
+Schuim: 0 sec
+Extra: snufje zout, karamelsmaak
+      </pre>
+    </div>
+
+  </div>
+
+  <script>
+    function filterRecepten(type) {
+      const kaarten = document.querySelectorAll('.kaart');
+      kaarten.forEach(k => {
+        if (type === 'all') {
+          k.classList.add('show');
+        } else {
+          k.classList.remove('show');
+          if (k.classList.contains(type)) {
+            k.classList.add('show');
+          }
+        }
+      });
+    }
+    filterRecepten('all');
+  </script>
+</body>
+</html>
