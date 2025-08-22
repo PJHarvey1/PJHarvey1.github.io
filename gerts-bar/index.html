@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Gert's Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>☕ Gert's Bar</h1>
+    <nav class="tabs">
+      <a href="#recepten" id="tab-recepten" class="active">Recepten</a>
+      <a href="#favorieten" id="tab-favorieten">Favorieten</a>
+      <a href="#bonen" id="tab-bonen">Bonen</a>
+    </nav>
+  </header>
+
+  <section id="filters" class="filters">
+    <button data-filter="all">Alle</button>
+    <button data-filter="hot">Hot</button>
+    <button data-filter="cold">Cold</button>
+    <button data-filter="fris">Fris & Zomers</button>
+    <button id="btn-surprise">Surprise me 🎲</button>
+    <input id="search" type="search" placeholder="Zoek recept of boon...">
+  </section>
+
+  <main id="view">
+    <!-- Views worden dynamisch gerenderd -->
+  </main>
+
+  <footer class="foot">
+    <p>❤ Favorieten worden lokaal opgeslagen in je browser • Versie 1.1</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

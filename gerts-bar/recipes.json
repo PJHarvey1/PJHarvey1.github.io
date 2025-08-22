@@ -1,0 +1,78 @@
+[
+  {
+    "id": "gorilla-cappuccino",
+    "name": "Cappuccino – Gorilla No.1",
+    "brew": "hot",
+    "tags": [
+      "romig",
+      "klassiek"
+    ],
+    "bean": "Gorilla No.1 Crema",
+    "z10": {
+      "strength": 3,
+      "grind": 4,
+      "water_ml": 30,
+      "milk_ml": 120
+    },
+    "extras": [
+      "cacaopoeder"
+    ],
+    "icons": "🦍🥛"
+  },
+  {
+    "id": "movenpick-coldbrew",
+    "name": "Cold Brew – Mövenpick Himmlische",
+    "brew": "cold",
+    "tags": [
+      "fris",
+      "fruitig"
+    ],
+    "bean": "Mövenpick Der Himmlische",
+    "z10": {
+      "strength": 2,
+      "grind": 5,
+      "water_ml": 200
+    },
+    "extras": [
+      "ijsblokjes"
+    ],
+    "icons": "❄️🌸"
+  },
+  {
+    "id": "flatwhite-gorilla",
+    "name": "Flat White – Gorilla No.1",
+    "brew": "hot",
+    "tags": [
+      "romig",
+      "intens"
+    ],
+    "bean": "Gorilla No.1 Crema",
+    "z10": {
+      "strength": 4,
+      "grind": 4,
+      "water_ml": 40,
+      "milk_ml": 100
+    },
+    "extras": [
+      "lichte cacao"
+    ],
+    "icons": "🦍☁️"
+  },
+  {
+    "id": "americano-illy",
+    "name": "Americano – Illy Classico",
+    "brew": "hot",
+    "tags": [
+      "klassiek",
+      "mild"
+    ],
+    "bean": "Illy Classico",
+    "z10": {
+      "strength": 3,
+      "grind": 5,
+      "water_ml": 180
+    },
+    "extras": [],
+    "icons": "🇮🇹☕"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Gorilla No.1 Crema",
+    "roaster": "JJ Darboven (Gorilla)",
+    "price_per_kg_eur": 18.9,
+    "acidity": 2,
+    "bitterness": 2,
+    "body": 4,
+    "flavor_notes": "mild, romig, nootachtig",
+    "suitable_for": [
+      "lungo",
+      "cappuccino",
+      "flat white"
+    ],
+    "icons": "🦍"
+  },
+  {
+    "name": "Mövenpick Der Himmlische",
+    "roaster": "J.J. Darboven",
+    "price_per_kg_eur": 17.5,
+    "acidity": 3,
+    "bitterness": 2,
+    "body": 3,
+    "flavor_notes": "licht fruitig, gebalanceerd",
+    "suitable_for": [
+      "americano",
+      "zwarte koffie",
+      "cold brew"
+    ],
+    "icons": "🌸"
+  },
+  {
+    "name": "Illy Classico",
+    "roaster": "Illy",
+    "price_per_kg_eur": 24.9,
+    "acidity": 3,
+    "bitterness": 2,
+    "body": 3,
+    "flavor_notes": "chocolade, karamel, bloemen",
+    "suitable_for": [
+      "espresso",
+      "americano",
+      "cappuccino"
+    ],
+    "icons": "🇮🇹"
+  },
+  {
+    "name": "Vos Gold",
+    "roaster": "Vos Koffie",
+    "price_per_kg_eur": 26.0,
+    "acidity": 2,
+    "bitterness": 2,
+    "body": 4,
+    "flavor_notes": "zacht, honing, notig",
+    "suitable_for": [
+      "cappuccino",
+      "flat white",
+      "lungo"
+    ],
+    "icons": "🟡"
+  },
+  {
+    "name": "Vos Pearl",
+    "roaster": "Vos Koffie",
+    "price_per_kg_eur": 26.0,
+    "acidity": 3,
+    "bitterness": 2,
+    "body": 3,
+    "flavor_notes": "fijn, licht fruitig",
+    "suitable_for": [
+      "americano",
+      "lungo"
+    ],
+    "icons": "⚪"
+  },
+  {
+    "name": "Caféma Caresso",
+    "roaster": "Caféma",
+    "price_per_kg_eur": 32.0,
+    "acidity": 2,
+    "bitterness": 3,
+    "body": 4,
+    "flavor_notes": "karamel, cacao, stevige body",
+    "suitable_for": [
+      "espresso",
+      "cappuccino"
+    ],
+    "icons": "🍫"
+  }
+]
